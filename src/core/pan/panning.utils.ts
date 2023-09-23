@@ -66,7 +66,7 @@ export const handleTouchPanningSetup = (
   contextInstance.isPanning = true;
 
   // Panning with touch
-  const oneFingerTouch = touches.length === 1;
+  const oneFingerTouch = touches.length >= 1;
   if (oneFingerTouch) {
     const x = touches[0].clientX;
     const y = touches[0].clientY;
